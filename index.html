@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<title>Калькулятор</title>
+  <style >
+    body{
+     background-position: center;
+     background-size: cover;
+     width: 100%;
+     height: 100vh;
+     position: relative;
+    }
+    header{
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+    }
+   </style>
+</head>
+<body>
+  <header >
+ 
+    <div class="card w-50 m-auto text-center ">
+      <div class="card-header bg-secondary text-white">Калькулятор</div>
+      <div class="card-body">
+       <form class="form w-90 m-auto">
+        <div class="form-group">
+         <input type="text" name="" class="form-control text-center" placeholder="Введите Первое число" id="num1" >
+        </div>
+       </form> 
+       <br>
+        <div class="w-70 m-auto" id="operator_btns">
+            <button id="plus" onclick="op='+'">+</button>
+            <button id="minus" onclick="op='-'">-</button>
+            <button id="times" onclick="op='*'">x</button>
+            <button id="divide" onclick="op='/'">:</button>
+        </div>
+        <br>
+        <div>
+          <input type="text" name="" placeholder="Введите второе число" class="form-control text-center w-30 m-auto" id="num2">
+         </div>
+         <br>
+         <div class="w-70 m-auto">
+          <button  class="btn btn-success w-50" onclick="func()"> Посчитать </button>
+         </div>
+         <br>
+        <div>
+         <input type="text" name="" placeholder="Результаты" class="form-control text-center w-30 m-auto" id="result">
+        </div>
+      </div> 
+    </div>
+    
+    </header>
+
+<script src="script.js"></script>
+</body>
+</html>
